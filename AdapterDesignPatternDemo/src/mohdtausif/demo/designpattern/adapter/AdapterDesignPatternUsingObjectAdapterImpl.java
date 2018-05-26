@@ -18,9 +18,8 @@ public class AdapterDesignPatternUsingObjectAdapterImpl implements SocketAdapter
 		return convert(socket.getVolt(), 40);
 	}
 	
-	private Volt convert(Volt v, int i)
-	{
-		return new Volt(v.getVolt()/i);
+	private Volt convert(Volt v, int i) {
+		return new Volt(v.getVolt() / i);
 	}
 
 }
